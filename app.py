@@ -1,8 +1,10 @@
+from email.mime import application
 from flask import Flask, request, render_template
 from flask_cors import cross_origin
 import pickle
 import pandas as pd
 import numpy as np
+import sklearn
 
 app = Flask(__name__)
 model = pickle.load(open("model.pkl", "rb"))
