@@ -1,4 +1,3 @@
-from email.mime import application
 from flask import Flask, request, render_template
 from flask_cors import cross_origin
 import pickle
